@@ -1,7 +1,3 @@
-plugins {
-  id "org.sonarqube" version "2.6"
-}
-
 import groovy.json.JsonSlurper
 import org.gradle.internal.os.OperatingSystem
 
@@ -19,6 +15,7 @@ buildscript {
 }
 
 plugins {
+	id "org.sonarqube" version "2.6"
     id 'com.gradle.build-scan' version '1.16'
     id 'com.install4j.gradle' version '7.0.8'
     id 'com.github.johnrengelman.shadow' version '2.0.4'
